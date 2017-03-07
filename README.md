@@ -9,6 +9,10 @@ simple and useless tool to read wired without the anti-adBlocker  banner.
 
 # usage
 
+Easy to install:
+
+    npm install
+
 Easy to launch:
 
     node server.js
