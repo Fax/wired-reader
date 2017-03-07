@@ -3,7 +3,7 @@ var fs = require('fs');
 var request = require('request');
 var cheerio = require('cheerio');
 var app = express();
-
+var serverPort = '4500';
 
 app.get('/read/:wiredUrl', function (req, res) {
   var url = decodeURIComponent(req.params.wiredUrl);
@@ -56,6 +56,6 @@ app.get('/', function (req, res) {
   })
 })
 
-app.listen('4500');
+app.listen(serverPort);
 
 exports = module.exports = app;
